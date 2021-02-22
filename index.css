@@ -1,0 +1,236 @@
+.container{
+    padding:10px;
+    width:400px;
+    height:730px;
+    margin:0 auto;
+    background-image: url(img/bg1.jpg);
+    background-size: contain;
+    font-family: Lobster;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.container:before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+.header{
+    display: flex;
+    height: 180px;
+}
+
+#results{
+    margin-left: 35px;
+    margin-right: auto;
+    font-size: 55px;
+    margin-top: 55px;
+    width: 140px;
+}
+#date{
+    margin-top: 65px;
+    margin-left: 10px; 
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    width: 210px;
+}
+.content{
+    margin-top: 30px;
+}
+.item{
+    font-size: 20px;
+}
+.plus{
+    border: none;
+    background: none;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    font-size: 45px;
+}
+.cal{
+    border: none;
+    background: none;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    font-size: 45px;
+}
+.modal{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 200px;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(51, 51, 51);
+    visibility: hidden;
+    transition: visibility 0s opacity 0,5s;
+}
+
+.modal-on{
+    visibility: visible;
+    opacity: 1;
+}
+.modal p{
+    color: whitesmoke;
+    margin:0px;
+}
+.modal input{
+    margin-bottom: 35px;
+    background: none;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    outline: none;
+}
+.date, .time{
+    border: none;
+}
+.modal .add{
+    margin-left: 100px;
+    border-radius: 10px;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 25px;
+    border: transparent;
+    margin-top: -10px;
+}
+.modal .close{
+    position: absolute;
+    right: 15px;
+    top:10px;
+    background: none;
+    color: whitesmoke;
+    font-size: 25px;
+    border: none;
+}
+.modal button:hover{
+    color: black;
+}
+.overlay{
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    transition: visibility 0s opacity 0,5s;
+}
+.overlay-on{
+    visibility: visible;
+    opacity: 1;
+}
+.todo-container
+{
+    display: flex;
+    overflow-y: hidden;
+    height: 420px;
+    overflow-x: hidden;
+}
+.list{
+    font-family: 'Montserrat', sans-serif;
+    padding:10px;
+    padding-top: 0px;
+    list-style: none;
+    min-width: 95%;
+}
+.action{
+    margin: 5px;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    min-width: 92.5%;
+}
+.trash-btn{
+    background: none;
+    color:whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin:2px;
+    padding: 2px;
+    position: absolute;
+    right: 35px;
+}
+.complete-btn{
+    background: none;
+    color:whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin:2px;
+    padding: 2px;
+    position: absolute;
+    right: 70px;
+}
+.fa-angle-down{
+    font-size: 33px;
+}
+.complete-btn:hover{
+    color: rgb(35, 233, 111);
+}
+.trash-btn:hover{
+    color: red;
+}
+.fa-trash, .fa-angle-down{
+    pointer-events: none;
+    text-decoration: none;
+    display: block;
+}
+.todo-item{
+    color: whitesmoke;
+    position: relative;
+    margin-left: 5px;
+}
+.comment-item{
+    color: whitesmoke;
+    font-size: 16px;
+    position: relative;
+    padding-left: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    word-break: break-all;
+}
+.date-item{
+    color: whitesmoke;
+    font-size: 16px;
+    position: relative;
+    padding-left: 5px;
+    margin: 5px;  
+    margin-top: 1px;
+}
+.hour-item{
+    color: whitesmoke;
+    font-size: 16px;
+    position: relative;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+
+
+
